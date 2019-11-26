@@ -21,7 +21,7 @@
                 @click="submitAnswer"
                 :disabled="selectedIndex === null || answered"
             >Submit</b-button>
-            <b-button @click="next" :disabled="numQuestion === totalQuestion" variant="success">Next</b-button>
+            <b-button @click="next" :disabled="numQuestion === totalQuestion || !answered" variant="success">Next</b-button>
         </b-jumbotron>
     </div>
 </template>
